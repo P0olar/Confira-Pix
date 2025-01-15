@@ -52,9 +52,15 @@ body {
     backdrop-filter: blur(10px);
     margin: 20px;
 }
+
 h1 {
     font-size: 1.6em;
     margin-bottom: 30px;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-top: 10px;
 }
 
 .benefits {
@@ -63,7 +69,7 @@ h1 {
     margin: 50px 0;
 }
 .benefits li {
-    font-size: 1.1em;
+    font-size: 1em;
     margin: 15px 0px;
     display: flex;
     align-items: center;
@@ -74,6 +80,7 @@ h1 {
     color: #22df2f;
     margin-right: 10px;
     font-size: 1.5em;
+    font-family: 'CodecPro';
 }
 button {
     margin: 0rem 1rem; 
