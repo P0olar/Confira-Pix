@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Chunkfive;
+    src: url(../style/font/Chunkfive.ttf);
+}
+
+@font-face {
+    font-family: CodecPro;
+    src: url(../style/font/codecpro.ttf);
+}
+
+.nav-top {
+    background-color: #333333;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 0rem 0rem 3rem 3rem;
+    margin: 0rem 0rem 3rem 0rem;
+}
+
+.logo {
+    width: 12rem;
+}
+
+.titlelogin {
+    margin: 1rem 1rem 2rem 1rem;
+    font-family: Chunkfive;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.bancologin {
+    width: 30rem;
+    margin: 0rem 4rem 0rem 4rem;
+}
+
+.container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    padding-bottom: 5rem;
+}
+
+.userform {
+    font-family: Chunkfive;
+    background-color: #f1f1f1;
+    width: 32rem;
+    height: 25rem;
+    border-radius: 2rem;
+    margin: 0rem 4rem 0rem 4rem;
+}
+
+.userlogin {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0rem 1rem 1.2rem 1rem;
+}
+
+.userlogin input {
+    font-size: 1rem;
+    padding: .5rem;
+    width: 15rem;
+    border-radius: .5rem;
+    border: #d4d1d1 solid 1px;
+}
+
+.bnt-login {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.bnt-login a {
+    color: black;
+    text-decoration: none;
+}
+
+.bnt-login input {
+    cursor: pointer;
+    margin: .4rem;
+    border: #333333 solid 1px;
+    border-radius: .7rem;
+    color: white;
+    background-color: #22df2f;
+    font-family: Chunkfive;
+    padding: .5rem;
+    width: 9.5rem;
+    transition: ease-in-out .3s;
+    font-size: 1.2rem;
+}
+
+.bnt-login input:hover {
+    background-color: #a4f1a9;
+}
+
+.footer {
+    text-align: center;
+    color: white;
+    border: 1px solid black;
+    background-color: #333333;
+    align-items: center;
+    justify-content: center;
+    font-family: CodecPro;
+    border-radius: 3rem 3rem 0rem 0rem;
+    bottom: 0;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.text-footer {
+    margin: 0rem 5rem 0rem 5rem;
+}
+
+.text-footer h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-aling {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+footer {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: .7rem;
+    background-color: #333333;
+    color: white;
+    margin: 1rem 0rem 0rem 0rem;
+}
+
+@media screen and (max-width: 431px) {
+    .nav-top {
+        width: 100%;
+        margin: 0;
+    }
+
+    .titlelogin {
+        margin: 1rem 0rem 1rem 0rem;
+        font-size: 2rem;
+    }
+
+
+    .bancologin {
+        display: none;
+    }
+
+    .footer {
+        font-size: .6rem;
+    }
+
+    .userlogin {
+        margin: 0rem 0rem 1rem 0rem;
+        scale: .9;
+    }
+
+    .bnt-login {
+        scale: .9;
+        margin: 1rem 0rem 0rem 0rem;
+    }
+
+    .bnt-login a {
+        font-size: .9rem;
+    }
+
+    .container {
+        padding-bottom: 0rem;
+        margin: 2rem 0rem 3rem 0rem;
+    }
+
+    footer {
+        font-size: .5rem;
+    }
+
+
+    .logo {
+        width: 10rem;
+    }
+
+    .text-footer {
+        margin: 0rem 1rem 0rem 1rem;
+    }
+}

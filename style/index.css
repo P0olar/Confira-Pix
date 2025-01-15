@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Chunkfive;
+    src: url(../style/font/Chunkfive.ttf);
+}
+
+@font-face {
+    font-family: CodecPro;
+    src: url(../style/font/codecpro.ttf);
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../style/font/Poppins-Bold.ttf);
+}
+
+.nav-top {
+    background-color: #333333;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 0rem 0rem 3rem 3rem;
+    margin: 0rem 0rem 0rem 0rem;
+}
+
+.logo {
+    width: 15rem;
+}
+
+.body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+}
+
+.container {
+    max-width: 800px;
+    padding: 30px;
+    background: #494949;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    backdrop-filter: blur(10px);
+    margin: 20px;
+}
+h1 {
+    font-size: 1.6em;
+    margin-bottom: 30px;
+}
+
+.benefits {
+    list-style: none;
+    padding: 0;
+    margin: 50px 0;
+}
+.benefits li {
+    font-size: 1.1em;
+    margin: 15px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.benefits li::before {
+    content: '\2713';
+    color: #22df2f;
+    margin-right: 10px;
+    font-size: 1.5em;
+}
+button {
+    margin: 0rem 1rem; 
+    padding: .6rem 2rem 0.6rem 2rem;
+}
+
+button {
+    cursor: pointer;
+    margin: .4rem;
+    border: #333333 solid 1px;
+    border-radius: .7rem;
+    color: white;
+    background-color: #22df2f;
+    font-family: 'Poppins';
+    padding: .5rem;
+    width: 9.5rem;
+    transition: ease-in-out .3s;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    background-color: #a4f1a9;
+}
+
+.footer {
+    text-align: center;
+    color: white;
+    border: 1px solid black;
+    background-color: #333333;
+    align-items: center;
+    justify-content: center;
+    font-family: CodecPro;
+    border-radius: 3rem 3rem 0rem 0rem;
+    bottom: 0;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.text-footer {
+    margin: 0rem 5rem 0rem 5rem;
+}
+
+.text-footer h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-aling {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+footer {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: .7rem;
+    background-color: #333333;
+    color: white;
+    margin: 1rem 0rem 0rem 0rem;
+}
+
+.padrao {
+    margin: 5rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

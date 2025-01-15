@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Confira PIX</title>
+    <link rel="shortcut icon" href="img/site.png" type="image/x-icon">
+    <link rel="stylesheet" href="style/cadastro.css">
+</head>
+
+<body>
+    <div class="nav-top">
+        <a href="login.php"><img src="img/logo-site.png" class="logo"></a>
+    </div>
+
+    <div class="container">
+        <div class="box">
+            <form id="form-cadastro" method="post" action="salvar.php">
+                <div class="step" id="step-1">
+                    <p>Dados da Empresa</p>
+                    <input name="RazaoSocial" id="RazaoSociacadastrol" type="text" placeholder="Razão Social"
+                        required><br>
+                    <input name="CNPJ" id="CNPJ" type="text" placeholder="CNPJ" maxlength="18" required><br>
+                    <p class="mensagem" id="mensagemErroCNPJ"></p>
+                    <input name="IE" id="IE" type="text" placeholder="IE (Deixe em branco se não possuir)"><br>
+                    <input name="Email" id="Email" type="email" placeholder="E-mail" required><br>
+                    <input name="Telefone" id="Telefone" type="tel" maxlength="15" placeholder="Telefone com DDD"
+                        required><br>
+                    <div class="passo">
+                        <button type="button" onclick="nextStep()">Avançar</button>
+                    </div>
+                </div>
+                <div class="step" id="step-2" style="display:none;">
+                    <p>Endereço da Empresa</p>
+                    <input name="CEP" id="CEP" type="text" onblur="buscarCep()" placeholder="Digite o CEP"
+                        maxlength="9"><br>
+                    <input name="Rua" id="Rua" type="text" placeholder="Logradouro" required><br>
+                    <input name="Numero" id="Numero" type="text" placeholder="Número" required><br>
+                    <input name="Bairro" id="Bairro" type="text" placeholder="Bairro" required><br>
+                    <input name="Cidade" id="cidade" type="text" placeholder="Cidade" readonly><br>
+                    <input name="Estado" id="estado" type="text" placeholder="Estado" readonly><br>
+                    <div class="passo">
+                        <button type="button" onclick="prevStep()">Voltar</button>
+                        <button type="button" onclick="nextStep()">Avançar</button>
+                    </div>
+                </div>
+                <div class="step" id="step-3" style="display:none;">
+                    <p>Dados do Responsável</p>
+                    <input name="NomeResponsavel" id="NomeResponsavel" type="text" placeholder="Nome Completo"
+                        required><br>
+                    <input name="CPF" id="CPF" type="text" maxlength="14" placeholder="CPF" required><br>
+                    <input name="TelefoneResponsavel" id="TelefoneResponsavel" type="tel" maxlength="15"
+                        placeholder="Telefone com DDD" required><br>
+                    <div class="passo">
+                        <button type="button" onclick="prevStep()">Voltar</button>
+                        <button type="button" onclick="nextStep()">Avançar</button>
+                    </div>
+                </div>
+                <div class="step" id="step-4" style="display:none;">
+                    <p>Crie o Acesso</p>
+                    <input name="username" id="username" type="text" placeholder="Nome de Usuario" required><br>
+                    <input name="senha" type="password" id="senha" maxlength="20"
+                        placeholder="Crie uma Senha de 6 à 20 Carc" required><br>
+                    <input id="password" type="password" placeholder="Confirme sua senha" maxlength="20" required>
+                    <p class="mensagem" id="mensagemErro"></p><br>
+                    <h3>Escolher Banco</h3>
+                    <div class="dias">
+                        <select name="BancoEscolhido" id="BancoEscolhido" class="dia" required>
+                            <option value="Mercado-Pago">Mercado Pago</option>
+                            <option value="Banco-do-Brasil">Banco do Brasil</option>
+                            <option value="Inter">Inter</option>
+                            <option value="Santander">Santander</option>
+                            <option value="Bradesco">Bradesco</option>
+                            <option value="Itau">Itau</option>
+                            <option value="Sicred">Sicred</option>
+                            <option value="Sicob">Sicob</option>
+                        </select><br>
+                    </div>
+                    <h3>Dia do Vencimento</h3>
+                    <div class="dias">
+                        <select name="DiaVencimento" id="DiaVencimento" class="dia" required>
+                            <option value="10">Dia 10</option>
+                            <option value="20">Dia 28</option>
+                        </select><br>
+                    </div>
+                    <div class="teste-term">
+                        <input type="checkbox" class="termos-de-uso" required id="termos-condições">
+                        <p class="termos">Eu Aceito os <a href="">Termos & Conições</a></p>
+                    </div>
+                    <div class="passo">
+                        <button type="button" onclick="prevStep()">Voltar</button>
+                        <button type="submit">Concluir</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+    </div>
+
+    <div class="footer">
+        <div class="footer-aling">
+            <div class="text-footer">
+                <a href="">Pagina Inical</a>
+            </div>
+            <div class="text-footer">
+                <a href="./Termo-de-Uso.html">Termos e Condições</a>
+            </div>
+            <div class="text-footer">
+                <h4>Contato</h4>
+                <a href="#">E-mail<br>Whatsapp</a>
+            </div>
+        </div>
+        <footer>ConfiraPix - Copyright © 57.774.809 VICTOR FERNANDO DOS SANTOS</footer>
+    </div>
+</body>
+
+</html>

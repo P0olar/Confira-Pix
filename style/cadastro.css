@@ -1,0 +1,180 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Chunkfive;
+    src: url(../style/font/Chunkfive.ttf);
+}
+
+@font-face {
+    font-family: CodecPro;
+    src: url(../style/font/codecpro.ttf);
+}
+
+.nav-top {
+    background-color: #333333;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 0rem 0rem 3rem 3rem;
+    margin: 0rem 0rem 0rem 0rem;
+}
+
+.logo {
+    width: 12rem;
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    margin: 6rem 5rem;
+}
+
+.box {
+    width: 30rem;
+    height: auto;
+    background-color: #f1f1f1;
+    border-radius: 1rem;
+}
+
+p {
+    text-align: center;
+    margin: 1rem 0rem 2rem 0rem;
+    font-family: Chunkfive;
+    font-size: 2rem;
+}
+
+.mensagem {
+    margin: 0;
+}
+
+h3 {
+    text-align: center;
+    margin: 0rem 0rem 1rem 0rem;
+    font-family: Chunkfive;
+    font-size: 1.5rem;
+    font-style: normal;
+}
+.dias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem 0rem 1rem 0rem;
+}
+
+
+
+.termos-de-uso {
+    margin: -1rem 1rem 0rem 0rem;
+    width: 1rem;
+    height: 1rem;
+}
+
+.teste-term {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.termos {
+    text-align: center;
+    margin: 0rem 0rem 1rem 0rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    margin: 0rem 0rem 1rem 0rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.step {
+    display: none;
+    margin: 0 auto;
+    }
+
+.passo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem 0rem 1rem 0rem;
+}
+
+.step.active {
+    display: block;
+}
+
+input {
+    font-size: 1rem;
+    padding: .5rem;
+    width: 20rem;
+    border-radius: .5rem;
+    border: #d4d1d1 solid 1px;
+    margin: .3rem 1rem;
+}
+
+button {
+    cursor: pointer;
+    margin: .4rem;
+    border: #333333 solid 1px;
+    border-radius: .7rem;
+    color: white;
+    background-color: #22df2f;
+    font-family: Chunkfive;
+    padding: .5rem;
+    width: 9.5rem;
+    transition: ease-in-out .3s;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    background-color: #a4f1a9;
+}
+
+
+
+
+.footer {
+    text-align: center;
+    color: white;
+    border: 1px solid black;
+    background-color: #333333;
+    align-items: center;
+    justify-content: center;
+    font-family: CodecPro;
+    border-radius: 3rem 3rem 0rem 0rem;
+    bottom: 0;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.text-footer {
+    margin: 0rem 5rem 0rem 5rem;
+}
+
+.text-footer h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-aling {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+footer {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: .7rem;
+    background-color: #333333;
+    color: white;
+    margin: 1rem 0rem 0rem 0rem;
+}

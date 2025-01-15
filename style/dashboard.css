@@ -1,0 +1,368 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Chunkfive;
+    src: url(../style/font/Chunkfive.ttf);
+}
+
+@font-face {
+    font-family: CodecPro;
+    src: url(../style/font/codecpro.ttf);
+}
+
+.nav-top {
+    height: 9rem;
+    background-color: #333333;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 0rem 0rem 3rem 3rem;
+    margin: 0rem 0rem 1.5rem 0rem;
+}
+
+.logo {
+    width: 12rem;
+}
+
+.banco-conct {
+    width: 12rem;
+}
+
+.icon-user {
+    margin: 1rem;
+    height: 5rem;
+}
+
+.logo,
+.banco-conct,
+.user-card {
+    margin: 0rem 5rem 1rem 5rem;
+}
+
+.user-top {
+    display: flex;
+}
+
+.user-card {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 12rem;
+    height: 4.2rem;
+    align-items: center;
+    background-color: #fff;
+    padding: .5rem .8rem .5rem .5rem;
+    border-radius: 1.2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.details {
+    flex-grow: 1;
+}
+
+.name {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+    color: #000;
+}
+
+.cnpj {
+    font-size: 13.5px;
+    margin: 0;
+    color: #555;
+}
+
+.logout-button {
+    background-color: #32CD32;
+    border: none;
+    border-radius: 15px;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+    margin: .2rem 0rem 0rem .4em;
+    position: relative;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%, -50%);
+}
+
+.logout-button:hover {
+    background-color: #228B22;
+}
+
+.logout-button span::before {
+    content: "↩";
+    margin-right: 5px;
+}
+
+.filters {
+    margin: 0rem 0rem 3rem 0rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-filtro {
+    margin: .5rem 0rem 1rem 0rem;
+    font-family: Chunkfive;
+    font-size: 1.5rem;
+}
+
+.filters-teste {
+    background-color: #d4d1d1;
+    width: 52rem;
+    border-radius: 1rem;
+}
+
+.inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.op-filtro {
+    margin: 0rem 2rem 0rem 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.apply-button {
+    margin: 1.5rem 1rem 1rem 1rem;
+    background-color: #32CD32;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.apply-button:hover {
+    background-color: #228B22;
+}
+
+.filter-input {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 13rem;
+    box-sizing: border-box;
+}
+
+.refresh,
+.print,
+#openModal {
+    background-color: #32CD32;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 15px;
+    padding: 12px 22px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0rem 2rem 0rem 2rem;
+}
+
+.butons {
+    margin: 0rem 0rem 1rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.report {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem 0rem 1rem 0rem;
+}
+
+#modal {
+    font-family: sans-serif;
+    text-align: center;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 600px;
+    background: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    z-index: 1000;
+    padding: 2rem;
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 500;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+table {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    page-break-inside: auto;
+    max-width: 65rem;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+tr {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.footer {
+    text-align: center;
+    color: white;
+    border: 1px solid black;
+    background-color: #333333;
+    align-items: center;
+    justify-content: center;
+    font-family: CodecPro;
+    border-radius: 3rem 3rem 0rem 0rem;
+    margin: 3rem 0rem 0rem 0rem;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.text-footer {
+    margin: 0rem 5rem 0rem 5rem;
+}
+
+.text-footer h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-aling {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+footer {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: .7rem;
+    background-color: #333333;
+    color: white;
+    margin: 1rem 0rem 0rem 0rem;
+}
+
+
+@media screen and (max-width: 431px) {
+    .nav-top {
+        width: 100%;
+        margin: 0 0 1rem;
+    }
+
+    .banco-conct,
+    .print,
+    .coluna-test,
+    .coluna-te {
+        display: none;
+    }
+
+    .user-card {
+        scale: .9;
+    }
+
+    .logo,
+    .user-card {
+        margin: 0;
+    }
+
+    footer {
+        font-size: .5rem;
+    }
+
+    .text-footer {
+        font-size: 1rem;
+        margin: 0rem 1rem;
+    }
+
+    .filters-teste {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .titulo-filtro {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .inputs {
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
+    }
+
+    .op-filtro {
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+
+    .apply-button {
+        margin: 0.5rem auto;
+        width: 50%;
+    }
+
+    table {
+        width: 100%;
+        overflow-x: auto;
+        font-size: 0.8rem;
+    }
+
+    .coluna-valor {
+        padding: 0.5rem;
+    }
+}
